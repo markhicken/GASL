@@ -1,5 +1,4 @@
 # Google Analytics for Storyline (GASL)
-----------------
 
 ## What is it?
 
@@ -10,14 +9,12 @@ GASL is a javascript utility for Articulate Storyline that allows additional tra
 
 GASL hooks into the SCORM functions of a published Storyline project. Storyline publishes its table of contents information to **"story_content/frame.xml"**. When resume data is saved, it is checked against the navigation to determine the current slide and then sent to GA for tracking.
 
----------------
 
 ## Features
 
 - Automatic and manual pageView tracking
 - Manual event tracking
 
----------------
 
 ## Usage
 
@@ -49,7 +46,6 @@ See the comments in **gasl.js** (particularly the **gaConfig**) for additonal us
 
 Think GASL could do better? Suggest improvements via a pull request!
 
----------------
 
 ## Compatibility
 
