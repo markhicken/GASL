@@ -1,31 +1,17 @@
+// ------------------------------------------------------------
+
 /* 
 Google Analytics for Storyline (GASL)
 Copyright 2015, Mark Hicken
 Dual licensed under the MIT or GPL Version 2 licenses.
 
-v1.0.32
+Version: 1.0.32
 Date: 8/24/2015
 
-Tested on Articulate Storyline 2 Update 3: 1412.922 with SCORM 1.2 & HTML5
- - Chrome 45, Firefox 38, IE 7+
-
-----------------------------------------------------------------------------
-
-USAGE:
-	1. Update navigation in Storyline which will cause it to publish "story_content/frame.xml".
-		 Only pages included in the navigation will be tracked in Google Analytics.
-			 - Home > Player > Menu > Reset from story (icon)
-	2. Add the following line to "story.html", "index_lms.html", and "index_lms_html5.html" just before the </html> tag...
-		 <script src="gasl-scorm.js" type="text/javascript"></script>
-	3. Update the gaConfig below.
-
-Pageview tracking is automatic but you can call it manually as well.
-These functions are available from inside Storyline javascript triggers...
-	gasl.trackPageview(sPath, sTitle);
-	gasl.trackEvent(sCategory, sAction, [sLabel, eventData]);
-
-----------------------------------------------------------------------------
+Usage and other information at https://github.com/nekcih/GASL
 */
+
+// ------------------------------------------------------------
 
 if(!gaConfig) {
 	// UPDATE THIS CONFIG
