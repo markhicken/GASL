@@ -30,7 +30,7 @@ GASL hooks into the SCORM functions of a published Storyline project. Storyline 
 
 ### Javascript Triggers
 
-In Storyline, create a Javascript trigger. To manually track a pageView use the following code:
+In Storyline, create a Javascript trigger. To manually track a pageView, use the following code:
 
     gasl.trackPageview(sPath, sTitle);
 
