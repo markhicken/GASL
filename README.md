@@ -23,20 +23,23 @@ GASL hooks into the SCORM functions of a published Storyline project. Storyline 
 
 1. Update navigation in Storyline which will be published to **"story_content/frame.xml"**.
    - Only pages included in the navigation will be automatically tracked in Google Analytics.
-     - Home > Player > Menu > Reset from story (icon)
+
+       Home > Player > Menu > Reset from story (icon)
 2. Add the following line to the published **"story.html"**, **"index_lms.html"**, and **"index_lms_html5.html"** just before the `</html>` tag...
-   - `<script src="gasl-scorm.js" type="text/javascript"></script>`
+
+    `<script src="gasl-scorm.js" type="text/javascript"></script>`
+
 3. Update the **gaConfig** section in **gasl.js**.
 
 ### Javascript Triggers
 
 In Storyline, create a Javascript trigger. To manually track a pageView use the following code:
 
-    `gasl.trackPageview(sPath, sTitle);`
+    gasl.trackPageview(sPath, sTitle);
 
 To manually track an event, use the following code:
 
-    `gasl.trackEvent(sCategory, sAction, [sLabel, eventData]);`
+    gasl.trackEvent(sCategory, sAction, [sLabel, eventData]);
 
 ### Additional Info
 
