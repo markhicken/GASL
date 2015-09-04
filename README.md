@@ -44,6 +44,8 @@ See the comments in **gasl.js** (particularly the **gaConfig**) for additonal us
 
 **Note:** GASL does not automatically track slide numbers because it's possible for a slide to move in your project which would invalidate historical data in Google Analytics. 
 
+Automatic event tracking based on SCORM interactions would be difficult because the cmi.suspend_data is compressed with a proprietary algorithm. It is chunked and base64 encoded. To decode, you would have to know the number of parts to each chunk which could possibly be extrapolated from the html5 output. 
+
 Think GASL could do better? Suggest improvements via a pull request!
 
 
