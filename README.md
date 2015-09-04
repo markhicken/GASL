@@ -26,7 +26,7 @@ GASL hooks into the SCORM functions of a published Storyline project. Storyline 
 
     `<script src="gasl-scorm.js" type="text/javascript"></script>`
 
-3. Update the **gaConfig** section in **gasl.js**.
+3. Update the [**gaConfig**](https://github.com/nekcih/GASL/blob/master/gasl.js#L18-L26) section in [**gasl.js**](https://github.com/nekcih/GASL/blob/master/gasl.js).
 
 ### Javascript Triggers
 
@@ -40,7 +40,7 @@ To manually track an event, use the following code (where sLabel and eventData a
 
 ### Additional Info
 
-See the comments in **gasl.js** (particularly the **gaConfig**) for additonal usage information.
+See the comments in [**gasl.js**](https://github.com/nekcih/GASL/blob/master/gasl.js) (particularly the [**gaConfig**](https://github.com/nekcih/GASL/blob/master/gasl.js#L18-L26)) for additonal usage information.
 
 **Note:** GASL does not automatically track slide numbers because it's possible for a slide to move in your project which would invalidate historical data in Google Analytics. 
 
