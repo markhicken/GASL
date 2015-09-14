@@ -69,7 +69,14 @@ if(!gaConfig) {
 			}
 
 			// load slide data and then hook into SCORM and storyline for automatic pageView tracking
-			_self.getSlideInfoFromXml(_self.overrideStoryline);
+			_self.getSlideInfoFromXml(function(){ 
+				if(gaConfig.trackOutsideLMS || _self.bLMS_presentOnInit) {
+					_self.overrideStoryline();
+				}
+				else {
+					if(gaConfig.debug){ console.log('No LMS API found and trackOutsideLMS is not set to true - no tracking will occur'); }
+				}
+			});
 		},
 
 		validateConfig: function(){
