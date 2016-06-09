@@ -24,7 +24,7 @@ GASL hooks into the SCORM functions of a published Storyline project. Storyline 
        Home > Player > Menu > Reset from story (icon)
 2. Add the following line to the published **"story.html"**, **"index_lms.html"**, and **"index_lms_html5.html"** just before the `</html>` tag...
 
-    `<script src="gasl-scorm.js" type="text/javascript"></script>`
+    `<script src="gasl.js" type="text/javascript"></script>`
 
 3. Update the [**gaConfig**](https://github.com/nekcih/GASL/blob/master/gasl.js#L18-L26) section in [**gasl.js**](https://github.com/nekcih/GASL/blob/master/gasl.js).
 
