@@ -16,7 +16,7 @@ Usage and other information at https://github.com/nekcih/GASL
 if(!gaConfig) {
 	// UPDATE THIS CONFIG
 	var gaConfig = {
-		prodUrls: [''], // list of URLs that will use gaPropertyId_prod
+		prodUrls: ['www.mydomain1.com', 'www.mydomain2.com'], // list of URLs that will use gaPropertyId_prod
 		gaPropertyId_dev: 'UA-XXXXXXXX-X', // development GA property id
 		gaPropertyId_prod: 'UA-XXXXXXXX-X', // production GA property id (used on port 80)
 		basePath: '/', // root path in GA - should be the same for all courses
